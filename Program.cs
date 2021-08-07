@@ -26,15 +26,32 @@ namespace csharp
             numMinus--; //subtracts 1 from the number
             Console.WriteLine($"Num-- {numMinus}");
             Console.WriteLine();
-            //Math Operations
 
-            Console.WriteLine($"Square Root of 64: Math.Sqrt(64)");//math functions
+            //                      **Math Operations**
 
-            Console.WriteLine($"Min of Num++ and Num--: {Math.Min}({numMinus},{numPlus})");
             //Use this to determin Min or Max of two numbers hidden in variables
-            Console.WriteLine($"Max of Num++ and Num--: {Math.Max}({numMinus},{numPlus})");
+            var MathMin = (Math.Min(numMinus, numPlus));
+            Console.WriteLine($"Min of Num++ and Num--: {MathMin}");
 
-            Console.WriteLine("Min of two integers: Math.Min(22, 1)");
+            var MathMax = (Math.Max(numMinus, numPlus));
+            Console.WriteLine($"Max of Num++ and Num--: {MathMax}");
+
+            //math functions
+            var MathSqrt = (Math.Sqrt(64));
+            Console.WriteLine($"Square Root of 64: Math.Sqrt (64): {MathSqrt}");
+            var IntMin = (Math.Min(22, 1));
+            Console.WriteLine("Min of two integers: Math.Min (22, 1): {IntMin}");
+            var MathRound = Math.Round(4.6);
+            Console.WriteLine($"Rounding 4.6: {MathRound}");
+
+
+
+
+
+
+
+
+
 
 
 
